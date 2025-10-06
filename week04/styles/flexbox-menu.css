@@ -1,6 +1,11 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 nav {
@@ -17,6 +22,12 @@ nav ul {
     align-items: center;
 }
 
+nav li{
+    flex: 1 1 auto;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
 nav a {
     display: block;
     color: #fff;
@@ -31,6 +42,7 @@ p {
     padding: 1rem;
     background-color: #bed;
     max-width: 400px;
+    text-align: center;
 }
 
 #devtools-btn {
