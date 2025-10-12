@@ -1,0 +1,122 @@
+
+
+:root {
+    --poll-bg-color: #f9f9f9;
+    --poll-border-color: #ccc;
+    --poll-text-color: #333;
+    --poll-accent-color: #007BFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Merriweather, Georgia,serif;
+    font-size: 1.2rem;
+    background-color: var(--poll-bg-color);
+    color: var(--poll-text-color);
+}
+
+header {
+    background-color: var(--poll-accent-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1{
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+    text-align: center;
+}
+
+form{
+    background-color: white;
+    border: 1px solid var(--poll-border-color);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    display: grid;
+    gap: 1rem;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid var(--poll-text-color);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend{
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1rem;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label{
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--poll-border-color);
+    border-radius: 3px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+input[type="radio"], input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button{
+    margin: 1rem;
+    background-color: var(--poll-accent-color);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: darken(var(--poll-accent-color), 10%);
+}
+
+footer {
+    background-color: var(--poll-bg-color);
+    color: var(--poll-text-color);
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--poll-border-color);
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+}
+.column1{
+    grid-template-columns: 3fr 1 fr;
+    margin: 0.5rem 0;
+}
+
+.column2{
+    grid-template-columns: 1fr 2 fr;
+    margin: 0.5rem 0;
+
+}
